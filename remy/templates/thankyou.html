@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf=8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Name is Remy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen and (min-width:769px)" href="{% static 'remy/css/desktop.css' %}">
+  <link rel="stylesheet" media="screen and (max-width:768px)" type="text/css" href="{% static 'remy/css/mobile.css' %}">
+  <link rel="shortcut icon" type="text/css" href="{% static 'img/favicon.ico' %}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+<link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    .desktop {
+      display: grid;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+    .bg {
+      background-size: cover;
+    }
+
+    .desktop-img {
+      max-width: 80%;
+      max-height: 80%;
+    }
+    .mobile-image {
+      margin:auto;
+      max-width: 20%;
+      max-height: 20%;
+    }
+
+    #textoption{
+      text-shadow: 2px 2px 2px #000;
+    }
+
+    #mobile_text {
+      text-align: center;
+    }
+
+            /* width */
+          ::-webkit-scrollbar {
+            width: 20px;
+          }
+
+          /* Track */
+          ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+
+          /* Handle */
+          ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ff9a9e), color-stop(99%, #fecfef),
+    to(#fecfef));
+    background-image: -webkit-linear-gradient(bottom, #bbdefb 0%, #f8bbd0 55%, #9fa8da 100%);
+    background-image: linear-gradient(to top,  #bbdefb 0%, #f8bbd0 55%, #9fa8da 100%);
+          }
+
+          /* Handle on hover */
+          ::-webkit-scrollbar-thumb:hover {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px; }
+          
+
+  </style>
+
+<body>
+  <section class="desktop">
+    <div>
+      <div class="bg img-fluid text-align:center" style="background-image: url({% static 'img/festive.png' %})">
+        <!--Hero Section-->
+        <section class='hero'>
+          <div class="container-fluid">
+            <div id="textoption" class="row">
+              <div class="col-6 col-lg-6 order-2">
+                <img src="{% static "img/floating.svg" %}" class="float-in-out img-fluid desktop-img" alt="Kawaii Logo">
+              </div>
+              <div class="col-6 col-lg-6">
+                <h1>Thank you!</h1>
+                <h3 class="lead fade-in">I am a simple system utilizing GPT-2. I have two objectives, one,
+                   to showcase how our thinking affects other people, especially the next generation, children with their easily
+                    impressionable minds whom I emulate. And, two, to display the world's current stance on certain topics.</h3>
+                    <br>
+                    <h3 class="lead fade-in">Follow me on twitter <a href="https://twitter.com/remy_ai">@remy_ai</a> to know when I'm ready to talk!
+                    Or come back to the website later!</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+</section>
+
+    <section class="mobile">
+      <div>
+        <div class="bg img-fluid text-align:center" style="background-image: url({% static 'img/festive.png' %})">
+          <!--Hero Section-->
+          <section class='hero'>
+            <div class="container-fluid">
+              <div id="mobile_text" class="row">
+                <div class="col-12 col-lg-12 order-2">
+                  <h1>Thank you!</h1>
+                  <h3 class="lead fade-in">I am a simple system utilizing GPT-2. I have two objectives, one,
+                     to showcase how our thinking affects other people, especially the next generation, children with their easily
+                      impressionable minds whom I emulate. And, two, to display the world's current stance on certain topics.</h3>
+                      <br>
+                      <h3 class="lead fade-in">Follow me on twitter <a href="https://twitter.com/remy_ai">@remy_ai</a> to know when I'm ready to talk!
+                      Or come back to the website later!</h3>
+                </div>
+              </div>
+                <div class="row">
+                  <div class="col-12 col-xs-12">
+                    <img src="{% static "img/floating.svg" %}" class="float-in-out img-fluid mobile-image" alt="Kawaii Logo">
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>

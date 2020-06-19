@@ -1,0 +1,121 @@
+.hero {
+  background-image: url('static/images/sky2.png') no-repeat;
+  font-family: 'Merriweather', serif;
+  color: white;
+  font-weight: 900;
+  text-shadow: 1px 1px 1px #000;
+  height: 100vh;
+  padding-left: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+  text-align: left;
+}
+
+section h1 {
+  font-size: 14vh;
+}
+
+section p {
+  font-size: 0.5vh;
+}
+
+.desktop-img {
+  max-width:95%;
+  max-height:95%;
+}
+
+
+section h2 {
+  font-size: 10vh;
+}
+
+.float-in-out {
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    -webkit-transform:
+      translateY(0);
+  }
+
+  50% {
+    transform: translateY(1rem);
+    -webkit-transform:
+      translateY(1rem);
+  }
+
+  100% {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+}
+
+.teach {
+  background-image: url('static/images/sunset.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  height: 100vh;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  padding-top: 20vh;
+  padding-bottom: 30vh;
+  overflow: hidden;
+
+}
+
+textarea {
+  resize: none;
+
+}
+
+.smaller {
+  max-width: 10vw;
+  max-height: 12vw;
+}
+
+.teachbox {
+
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+}
+
+.comingsoon {
+  background-image: url('static/images/day.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+  padding-top: 25vh;
+  padding-bottom: 30vh;
+  font-family: 'Merriweather', serif;
+  text-shadow: 1px 1px 1px #000;
+  color: black;
+
+}
+
+
+.sitting {
+  padding-top: 7.5em;
+  float:right;
+  max-width: 16%;
+  max-height: 16%;
+}
+
+.comingsoontext {
+  font-size: 12vh;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
